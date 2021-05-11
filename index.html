@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="./jquery.min.js"></script>
     <script src="./utils.js"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="container">
@@ -29,7 +31,9 @@
             <div class="bitch">
                 <img src="./images/panda-large.png" alt="舔狗" class="tiangou">
             </div>
-            <p class="aim">舔狗社区是一个去中心化高度自治的社区，所有持有TGC的用户均可参与治理，一切规则由社区制定。我们的社区理念是：舔狗舔狗，应有尽有。全世界所有的舔狗们联合起来，舔到各自心爱的女神。害，如果不是真的喜欢，谁又愿意做一只舔狗呢？</p>
+            <p class="aim">
+                舔狗社区是一个去中心化高度自治的社区，所有持有TGC的用户均可参与治理，一切规则由社区制定。我们的社区理念是：舔狗舔狗，应有尽有。全世界所有的舔狗们联合起来，舔到各自心爱的女神。害，如果不是真的喜欢，谁又愿意做一只舔狗呢？
+            </p>
             <div class="form-box" id="verify_box">
                 <h2>空投</h2>
                 <div class="input-box">
@@ -41,40 +45,58 @@
                 </div>
                 <button id="get">领取空投</button>
             </div>
-        </div>
-    </div>
-    
-    <div id="verified_box">
-        <h2>空投</h2>
-        <p class="verified-tip">您已经成功获得100,000TGC，分享您的链接可以获得更多TGC，每邀请一人可获得额外100,000 TGC，TGC的Uniswap交易即将开放</p>
-        <p class="share-link"></p>
-        <button id="share">复制链接</button>
-        <div class="invite">
-            <p class="invite-label">我邀请的人数</p>
-            <p class="invite-value">0 人</p>
-            <p class="invite-label">邀请奖励</p>
-            <p class="invite-value">0 TGC</p>
-            <p class="invite-label">总奖励</p>
-            <p class="invite-value">100000 TGC</p>
-        </div>
-    </div>
-    <div id="sale">
-        <h2>公开销售</h2>
-        <div class="input-box">
-            <input type="number" id="coin_value">
-            <div class="coin-select" id="coin_select">
-                <div class="coin-select-value"></div>
-                <div class="coin-dropdown">
-                    <div>USDT</div>
-                    <div>ETH</div>
+            <div class="form-box" id="verified_box">
+                <h2>空投</h2>
+                <p class="verified-tip">您已经成功获得100,000TGC，分享您的链接可以获得更多TGC，每邀请一人可获得额外100,000 TGC，TGC的Uniswap交易即将开放</p>
+                <div class="input-box share-box">
+                    <input class="share-link" id="share_link" />
+                    <button id="share" onclick="copyContent('share_link')">复制链接</button>
+                </div>
+                <div class="invite">
+                    <p class="invite-label">我邀请的人数</p>
+                    <p class="invite-value">0 人</p>
+                    <p class="invite-label">邀请奖励</p>
+                    <p class="invite-value">0 TGC</p>
+                    <p class="invite-label">总奖励</p>
+                    <p class="invite-value">100000 TGC</p>
                 </div>
             </div>
+            <div id="sale" class="form-box">
+                <h2>公开销售</h2>
+                <div class="input-box">
+                    <span class="tip">从</span>
+                    <input type="text" placeholder="0.0" id="from">
+                    <div class="unit unit-select" id="select">
+                        <span class="value" id="unit_value">USDT</span>
+                        <div class="select-dropdown">
+                            <div class="select-dropdown-item">USDT</div>
+                            <div class="select-dropdown-item">ETH</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <span class="tip">到</span>
+                    <input type="text" placeholder="0.0" id="to" disabled>
+                    <div class="unit">TGC</div>
+                </div>
+                <button id="buy">购买</button>
+            </div>
         </div>
-        <div class="input-box">
-            <span id="tgc_value"></span>
-            <span class="tgc_unit">TGC</span>
+    </div>
+    <div class="mask">
+        <div class="mask-bg"></div>
+        <div class="mask-box">
+            <p>TianGouCoin Sales</p>
+            <p>正在购买<span id="buy_to"></span>个TianGouCoin</p>
+            <p class="small">请支付&nbsp;<span id="buy_from"></span>&nbsp;<span id="buy_unit"></span>&nbsp;到：</p>
+            <input class="secret" id="pay_address" value="0xDEa3B7A1Ee454d622b72A67dc6C9AA1Da04A98C3" />
+            <br>
+            <button id="copy_pay" onclick="copyContent('pay_address')">复制地址</button>
+            <br>
+            <img src="./images/qrcode.jpeg" alt="">
         </div>
     </div>
 </body>
+
 </html>
 <script src="./index.js"></script>

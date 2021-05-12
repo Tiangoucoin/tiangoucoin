@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css?version=1.0">
     <script src="./jquery.min.js"></script>
     <script src="./utils.js"></script>
 </head>
@@ -21,8 +21,8 @@
             </div>
             <ul class="navs">
                 <li><a href="javascript:;">Airdrop</a></li>
-                <li><a href="javascript:;">SALES</a></li>
-                <li><a href="javascript:;">TokenEconomics</a></li>
+                <li><a href="#sale">SALES</a></li>
+                <li><a href="#economics">TokenEconomics</a></li>
             </ul>
         </div>
     </div>
@@ -81,6 +81,58 @@
                 </div>
                 <button id="buy">购买</button>
             </div>
+            <div class="intro">
+                <p class="intro-item">说明：</p>
+                <p class="intro-item"></p>
+                <p class="intro-item">1、TianGouCoin是基于以太坊发行的Token，请使用以太坊钱包向TGC地址打币；</p>
+                <p class="intro-item">2、请勿使用交易所以太坊钱包打币，否则可能无法收到TGC；</p>
+                <p class="intro-item">3、如果没有没有以太坊钱包，建议下载一个math wallet，可以创建以太钱包、发送和接收代币；</p>
+                <p class="intro-item">4、由于以太坊链上最近比较拥堵，因此从我们接收到USDT或者ETH到向您的钱包发送TGC可能会有一定时间延迟；</p>
+                <p class="intro-item">5、Uniswap的流动性池将于近期添加，到时候即可自由交易TGC；</p>
+                <p class="intro-item">6、每枚TGC初始价格为：0.0001USDT，由于近期以太坊链上转账费用较高，建议500U起步购买。</p>
+            </div>
+            <div class="economics" id="economics">
+                <h2>代币经济</h2>
+                <table>
+                    <tr>
+                        <td>公开销售</td>
+                        <td>20,000,000,000</td>
+                        <td>20%</td>
+                        <td>公开销售，社区启动资金</td>
+                    </tr>
+                    <tr>
+                        <td>团队保留</td>
+                        <td>20,000,000,000</td>
+                        <td>20%</td>
+                        <td>绝对不会随便卖，团队是一群有理想的舔狗</td>
+                    </tr>
+                    <tr>
+                        <td>社区激励</td>
+                        <td>54,000,000,000</td>
+                        <td>54%</td>
+                        <td>还未细化规则，大概率是质押挖矿+社区任务激励，分好几年分发完成，所以不用担心抛压</td>
+                    </tr>
+                    <tr>
+                        <td>空投激励</td>
+                        <td>5,000,000,000</td>
+                        <td>5%</td>
+                        <td>分享即可领取，空投发放在公开销售完成之后，因此不会造成抛压</td>
+                    </tr>
+                    <tr>
+                        <td>流动性池子</td>
+                        <td>1,000,000,000</td>
+                        <td>1%</td>
+                        <td>Uniswap的池子，让更多人成为TGCers</td>
+                    </tr>
+                    <tr>
+                        <td>总计</td>
+                        <td>100,000,000,000</td>
+                        <td>100%</td>
+                        <td>总计</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mb80"></div>
         </div>
     </div>
     <div class="mask">

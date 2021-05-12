@@ -11,6 +11,10 @@ $(document).ready(function() {
             alert('请输入您的钱包地址');
             return;
         }
+        if (!address.startsWith('0x')) {
+            alert('请输入正确的以太坊地址');
+            return;
+        }
         if (code !== verify.toUpperCase()) {
             alert('请输入正确的验证码');
             return;

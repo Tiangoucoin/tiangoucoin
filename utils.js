@@ -1,5 +1,5 @@
 function generateVerify(length) {
-    const str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+    const str = 'ABCDEFGHIJKLMNPQRSTUVWXYZ123456789';
     let verify = '';
     for (let i = 0; i < length; i++) {
         verify += str[parseInt(Math.random() * str.length)];

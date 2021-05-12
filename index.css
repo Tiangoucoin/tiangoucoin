@@ -22,6 +22,10 @@ body {
     margin: auto;
 }
 
+.header {
+    height: 72px;
+}
+
 .header .container {
     height: 100%;
     display: flex;

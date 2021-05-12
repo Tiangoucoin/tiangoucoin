@@ -1,0 +1,234 @@
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100vw;
+    margin: auto;
+  }
+
+  body {
+    background: none;
+    background-color: #6157eb;
+  }
+  .bitch {
+    display: none;
+  }
+  .header .logos .logo-panda {
+    display: none;
+  }
+  .header .logos .logo-font {
+    margin-left: 2vw;
+    margin-top: 2vw;
+    width: 30vw;
+    object-fit: contain;
+  }
+  .navs {
+    display: none;
+  }
+  .aim {
+    margin-top: 12vw;
+    width: 90vw;
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .form-box {
+    margin-top: 4vw;
+    padding: 2vw 0 4vw;
+    width: 90vw;
+    border-radius: 4vw;
+  }
+
+  .form-box h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .input-box {
+    width: 80vw;
+    height: 16vw;
+    border-radius: 8vw;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16vw;
+    border: 1vw solid #6157eb;
+  }
+
+  .input-box input,
+  .verifies input,
+  .verifies span {
+    padding: 0 5vw;
+    width: 75vw;
+    height: 100%;
+    font-size: 16px;
+  }
+
+  .verifies {
+    margin: 4vw auto;
+    width: 80vw;
+    height: 16vw;
+  }
+
+  .verifies input,
+  .verifies span {
+    display: inline-block;
+    width: 39vw;
+    height: 100%;
+    border: 1vw solid #6157eb;
+    border-radius: 8vw;
+  }
+
+  .verifies span {
+    line-height: 14vw;
+    font-size: 24px;
+  }
+
+  .form-box button {
+    width: 80vw;
+    height: 16vw;
+    border-radius: 8vw;
+    font-size: 16px;
+    line-height: 16vw;
+  }
+
+  .verified-tip {
+    margin-top: 4vw;
+    width: 80vw;
+    font-size: 16px;
+    color: #6157eb;
+    line-height: 1.5;
+  }
+
+  .invite {
+    margin-top: 4vw;
+    width: 80vw;
+  }
+
+  .invite-label,
+  .invite-value {
+    margin-bottom: 2vw;
+    width: 50%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .input-box.share-box {
+    margin-top: 4vw;
+  }
+
+  .input-box.share-box input {
+    width: 60vw;
+    height: 12vw;
+    line-height: 12vw;
+    font-size: 16px;
+  }
+
+  .form-box button#share {
+    margin-right: 0.5vw;
+    width: 20vw;
+    height: 14vw;
+    line-height: 14vw;
+  }
+
+  #sale .input-box {
+    margin-bottom: 4vw;
+    margin-top: 4vw;
+  }
+
+  #sale .input-box .tip {
+    top: .5vw;
+    left: 3vw;
+    position: absolute;
+    font-size: 12px;
+  }
+
+  #sale .input-box input {
+    width: 60vw;
+  }
+
+  #sale .input-box .unit {
+    margin-right: .5vw;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  #sale .input-box .unit .value::after {
+    content: " ∨";
+    font-size: 12px;
+    opacity: 0.8;
+  }
+
+  #sale .input-box .unit-select .select-dropdown-item {
+    font-size: 14px;
+  }
+
+  .intro {
+    margin-top: 8vw;
+    width: 80vw;
+  }
+
+  .intro-item {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .economics {
+    margin-top: 8vw;
+  }
+
+  .economics h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .economics table {
+    margin-top: 4vw;
+    width: 90vw;
+  }
+
+  .economics table td {
+    height: 4vw;
+    white-space: pre-wrap;
+  }
+
+  .economics table td:nth-child(1),
+  .economics table td:nth-child(2),
+  .economics table td:nth-child(3) {
+    width: 20vw;
+  }
+
+  .mb80 {
+    height: 12vw;
+  }
+
+  .mask-box {
+    padding: 4vw 8vw;
+    width: 90vw;
+    height: 100vw;
+    border-radius: 4vw;
+  }
+
+  .mask-box img {
+    width: 50vw;
+  }
+
+  .mask-box p {
+    margin-bottom: 4vw;
+    font-size: 16px;
+  }
+
+  .mask-box p.small {
+    margin-bottom: 3vw;
+    font-size: 14px;
+  }
+
+  .mask-box .secret {
+    margin-bottom: 4vw;
+    font-size: 14px;
+  }
+
+  .mask-box button {
+    width: 40vw;
+    height: 14vw;
+    border-radius: 7vw;
+    font-size: 20px;
+    line-height: 14vw;
+  }
+}
